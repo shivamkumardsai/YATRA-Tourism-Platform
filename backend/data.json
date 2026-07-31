@@ -1,0 +1,212 @@
+{
+  "destinations": [
+    {
+      "id": "deoghar",
+      "name": "Deoghar and the Baidyanath Circuit",
+      "region": "Santhal Pargana",
+      "category": "Sacred",
+      "imageKey": "hero",
+      "heroImageKey": "hero",
+      "story": "At the confluence of faith, riverine geography, and seasonal pilgrimage, Deoghar reveals Jharkhand as a landscape of devotion shaped by centuries of ritual practice.",
+      "history": "The Baidyanath Temple is one of the most revered Shaivite pilgrimage centres in eastern India, drawing communities from across the region with enduring ritual continuity.",
+      "culture": "Temple traditions, devotional music, local fairs, and the rhythm of sacred travel create an atmosphere that is both intimate and ceremonial.",
+      "bestTime": "October to February for cooler weather and full temple activity.",
+      "nearbyAttractions": [
+        "Basukinath",
+        "Trikut Pahar",
+        "Tapovan"
+      ],
+      "localFood": [
+        "Litti chokha",
+        "Pitha",
+        "Sattu drink"
+      ],
+      "artisans": [
+        "Terracotta makers",
+        "Paitkar artists",
+        "Handloom weavers"
+      ],
+      "travelTips": [
+        "Start early for temple visits.",
+        "Keep cash for smaller local stops.",
+        "Carry modest clothing for sacred spaces."
+      ],
+      "responsibleTips": [
+        "Avoid littering near riverbanks and shrine paths.",
+        "Respect queues and local customs.",
+        "Choose local guides where possible."
+      ],
+      "ecoScore": 8,
+      "difficulty": "Easy",
+      "budget": "\u00e2\u201a\u00b94,800\u00e2\u20ac\u201c\u00e2\u201a\u00b99,600 per day",
+      "score": 1
+    },
+    {
+      "id": "betla",
+      "name": "Betla National Park",
+      "region": "Palamu",
+      "category": "Wildlife",
+      "imageKey": "hero",
+      "story": "Betla opens into a different register of Jharkhand\u00e2\u20ac\u201done of sal forests, large herbivores, and a rare sense of silence that arrives with the canopy itself.",
+      "history": "The park and its surrounding reserve forests are part of a long ecological story that continues to shape regional conservation policy and habitat protection.",
+      "culture": "Forest-edge communities bring lived knowledge of medicinal plants, pathways, and seasonal movement into the travel experience.",
+      "bestTime": "November to March for dry trails and better wildlife sightings.",
+      "nearbyAttractions": [
+        "Palamu Fort",
+        "Kechki",
+        "Lato Hills"
+      ],
+      "localFood": [
+        "Muthiya",
+        "Rice cakes",
+        "Forest herb chutney"
+      ],
+      "artisans": [
+        "Bamboo craft groups",
+        "Mango wood carvers",
+        "Traditional basket weavers"
+      ],
+      "travelTips": [
+        "Book safari permits ahead of time.",
+        "Carry binoculars and neutral clothing.",
+        "Travel with a local naturalist if possible."
+      ],
+      "responsibleTips": [
+        "Stay on marked routes.",
+        "Do not feed wildlife.",
+        "Support park-approved homestays."
+      ],
+      "ecoScore": 9,
+      "difficulty": "Moderate",
+      "budget": "\u00e2\u201a\u00b96,400\u00e2\u20ac\u201c\u00e2\u201a\u00b912,000 per day",
+      "score": 1
+    },
+    {
+      "id": "netarhat",
+      "name": "Netarhat and the Plateau Light",
+      "region": "Latehar",
+      "category": "Highlands",
+      "imageKey": "hero",
+      "story": "Netarhat feels like a highland memoir\u00e2\u20ac\u201dcool winds, pine-dotted horizons, and airy viewpoints that reveal a quieter side of the state.",
+      "history": "The plateau has long been known for its cool climate and scenic outlook, attracting visitors seeking repose from the heat of the plains.",
+      "culture": "The hill stations here are shaped by local settlement patterns, seasonal festivals, and community-led hospitality.",
+      "bestTime": "March to June for pleasant weather and clear views.",
+      "nearbyAttractions": [
+        "Lodh Falls",
+        "Mahuadanr",
+        "Patratu Valley"
+      ],
+      "localFood": [
+        "Pitha",
+        "Vegetable stew",
+        "Local pickles"
+      ],
+      "artisans": [
+        "Fibre weavers",
+        "Pinewood craftsmen",
+        "Local tea growers"
+      ],
+      "travelTips": [
+        "Plan for cooler evenings.",
+        "Carry light layers.",
+        "Avoid overpacking for short scenic drives."
+      ],
+      "responsibleTips": [
+        "Take care with water use in hill areas.",
+        "Support local caf\u00c3\u00a9s and homestays.",
+        "Leave no trace at viewpoints."
+      ],
+      "ecoScore": 8,
+      "difficulty": "Easy",
+      "budget": "\u00e2\u201a\u00b95,600\u00e2\u20ac\u201c\u00e2\u201a\u00b910,400 per day",
+      "score": 1
+    },
+    {
+      "id": "hundru",
+      "name": "Hundru Falls and the Valley Edge",
+      "region": "Ranchi",
+      "category": "Waterfalls",
+      "imageKey": "hero",
+      "story": "Hundru Falls is where Jharkhand\u00e2\u20ac\u2122s topography becomes cinematic. The water drops into a deep gorge, and the experience turns into one of geology, force, and the poetry of movement.",
+      "history": "The fall and its surrounding valleys form part of the state\u00e2\u20ac\u2122s dramatic geological story, linking landform, rainfall, and river runoff.",
+      "culture": "Nearby communities bring stories of seasonal gathering, forest use, and local rituals tied to the river and its edge.",
+      "bestTime": "July to October for full water volume and lush green surroundings.",
+      "nearbyAttractions": [
+        "Jonha Falls",
+        "Panchghagh Falls",
+        "Patratu Valley"
+      ],
+      "localFood": [
+        "Makhana",
+        "Rice porridge",
+        "Fresh root vegetables"
+      ],
+      "artisans": [
+        "Stone carvers",
+        "Bamboo craft collectives",
+        "Mushroom growers"
+      ],
+      "travelTips": [
+        "Check weather and trail conditions.",
+        "Wear shoes with grip.",
+        "Carry rain protection during monsoon."
+      ],
+      "responsibleTips": [
+        "Avoid climbing unsafe edges.",
+        "Use designated viewpoints.",
+        "Choose safe local transport."
+      ],
+      "ecoScore": 7,
+      "difficulty": "Moderate",
+      "budget": "\u00e2\u201a\u00b94,400\u00e2\u20ac\u201c\u00e2\u201a\u00b98,800 per day",
+      "score": 1
+    }
+  ],
+  "dashboard": {
+    "stats": [
+      {
+        "label": "Heritage sites",
+        "value": "24"
+      },
+      {
+        "label": "Protected areas",
+        "value": "11"
+      },
+      {
+        "label": "Craft clusters",
+        "value": "18"
+      },
+      {
+        "label": "Rural guides",
+        "value": "320+"
+      },
+      {
+        "label": "Eco stays",
+        "value": "142"
+      },
+      {
+        "label": "Community-led routes",
+        "value": "36"
+      }
+    ],
+    "snapshot": {
+      "title": "Live Tourism Snapshot",
+      "summary": "Pilgrimage demand remains strong, while conservation monitoring is improving across highland and forest routes.",
+      "highlights": [
+        {
+          "label": "Weekend occupancy",
+          "value": "82%"
+        },
+        {
+          "label": "Conservation alerts",
+          "value": "0"
+        },
+        {
+          "label": "Journeys created",
+          "value": "1"
+        }
+      ]
+    }
+  },
+  "reports": []
+}

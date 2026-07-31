@@ -1,0 +1,34 @@
+# Dependencies
+/node_modules
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtualenv
+.venv/
+venv/
+ENV/
+env/
+
+# Build and distribution
+/dist
+/build
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# Logs and user-uploaded content
+*.log
+/backend/uploads/
+/backend/data.json
+
+# OS-specific
+.DS_Store
+Thumbs.db
