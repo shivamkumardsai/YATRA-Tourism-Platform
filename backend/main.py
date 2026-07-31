@@ -1,15 +1,26 @@
 import json
-from fastapi import FastAPI
+import shutil
+import datetime
+import os
+import re
+from typing import List, Dict, Any, Annotated
+
+from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from typing import List, Dict, Any
-import re
 
 app = FastAPI(title="YATRA API", version="1.0.0")
 
+# Define allowed origins for CORS
+origins = [
+    "http://localhost:5173",  # Local frontend dev server
+    # Add your Vercel deployment URL here after deployment
+    # e.g., "https://your-project-name.vercel.app"
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -17,7 +28,12 @@ app.add_middleware(
 
 # Define the base directory of the backend script
 BACKEND_DIR = os.path.dirname(os.path.abspath(__file__))
+UPLOADS_DIR = os.path.join(BACKEND_DIR, "uploads")
 DATA_FILE = os.path.join(BACKEND_DIR, "data.json")
+
+# Create uploads directory if it doesn't exist
+if not os.path.exists(UPLOADS_DIR):
+    os.makedirs(UPLOADS_DIR)
 
 def read_data() -> Dict[str, Any]:
     try:
@@ -77,16 +93,16 @@ def create_journey(payload: JourneyPayload) -> Dict[str, Any]:
         budget_str = dest.get("budget", "0")
         # Use regex to find the first number in the budget string.
         price_match = re.search(r'[\d,]+', budget_str)
-        dest_budget_score = 3  # Default to 'Comfort'
+        dest_budget_score = 3  # Default to 'Comfort' if parsing fails
         if price_match:
             try:
                 price = int(price_match.group().replace(',', ''))
                 if price <= 4800:
                     dest_budget_score = 1  # Value
                 elif price <= 6400:
-                    dest_budget_score = 2  # Mid-range
+                    dest_budget_score = 2 # Mid-range
             except (ValueError, IndexError):
-                pass # Keep default score if parsing fails
+                pass # Keep default score
         else:
             dest_budget_score = 3 # Keep default if no numbers found
         
@@ -154,22 +170,6 @@ def create_journey(payload: JourneyPayload) -> Dict[str, Any]:
         "days": journey_days,
     }
 
-
-import shutil
-import datetime
-import os
-from fastapi import UploadFile, File, Form
-from typing import Annotated
-
-
-# Define the base directory of the backend script
-BACKEND_DIR = os.path.dirname(os.path.abspath(__file__))
-UPLOADS_DIR = os.path.join(BACKEND_DIR, "uploads")
-
-# Create uploads directory if it doesn't exist
-if not os.path.exists(UPLOADS_DIR):
-    os.makedirs(UPLOADS_DIR)
-
 class ReportPayload(BaseModel):
     category: str
     severity: str
@@ -201,7 +201,9 @@ def create_report(
     image_path = None
     if image and image.filename:
         # Save uploaded image
-        image_path = os.path.join(UPLOADS_DIR, f"{report_id}-{image.filename}")
+        # Sanitize filename to prevent path traversal
+        safe_filename = os.path.basename(image.filename)
+        image_path = os.path.join(UPLOADS_DIR, f"{report_id}-{safe_filename}")
         with open(image_path, "wb") as buffer:
             shutil.copyfileobj(image.file, buffer)
 
