@@ -33,8 +33,17 @@ const faces = [
   },
 ]
 
+type DashboardData = {
+  stats: Array<{ label: string; value: string }>;
+  snapshot: {
+    title: string;
+    summary: string;
+    highlights: Array<{ label: string; value: string }>;
+  };
+};
+
 export function HomePage() {
-  const [snapshot, setSnapshot] = useState<{ stats: Array<{ label: string; value: string }> ; snapshot: { title: string; summary: string; highlights: Array<{ label: string; value: string }> } } | null>(null)
+  const [snapshot, setSnapshot] = useState<DashboardData | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 

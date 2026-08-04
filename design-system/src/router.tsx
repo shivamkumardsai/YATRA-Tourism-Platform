@@ -8,11 +8,13 @@ import { LocalTreasuresPage } from './pages/LocalTreasuresPage'
 import { ConservationWatchPage } from './pages/ConservationWatchPage'
 import { TourismIntelligenceCentrePage } from './pages/TourismIntelligenceCentrePage'
 import { LoginPage } from './pages/LoginPage'
+import { ErrorBoundary } from './ErrorBoundary'
 
 export const router = createBrowserRouter([
   {
     path: '/',
     element: <AppLayout />,
+    errorElement: <ErrorBoundary />,
     children: [
       { index: true, element: <HomePage /> },
       { path: 'explore', element: <ExplorePage /> },
