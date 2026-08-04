@@ -11,16 +11,13 @@ from pydantic import BaseModel
 
 app = FastAPI(title="YATRA API", version="1.0.0")
 
-# Define allowed origins for CORS.
-# Keep both local development and the deployed frontend working.
-origins = [
-    "http://localhost:5173",
-    "https://yatratourismplatform.vercel.app",
-]
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=[
+        "http://localhost:5173",
+        "https://yatratourismplatform.vercel.app",
+    ],
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -36,8 +33,13 @@ if not os.path.exists(UPLOADS_DIR):
     os.makedirs(UPLOADS_DIR)
 
 
+@app.get("/")
+def root():
+    return {"status": "running"}
+
+
 @app.get("/health")
-def health_check() -> Dict[str, str]:
+def health() -> Dict[str, str]:
     return {"status": "ok"}
 
 def read_data() -> Dict[str, Any]:
