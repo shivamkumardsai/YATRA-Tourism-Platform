@@ -291,7 +291,7 @@ https://yatra-tourism-platform.onrender.com
 
 # Contributors
 
-### Shivam Kumar
+### Shivam Kumar (github.com/shivamkumardsai)
 
 Frontend Development
 
@@ -303,7 +303,7 @@ Deployment
 
 ---
 
-### Upasana Kumari
+### Upasana Kumari (github.com/upasna01stack)
 
 Frontend Development
 
@@ -313,7 +313,7 @@ Feature Implementation
 
 ---
 
-### Rounit Kumar Verma
+### Rounit Kumar Verma (github.com/rounit-k-verma)
 
 Frontend Development
 
@@ -323,7 +323,7 @@ Testing
 
 ---
 
-### Deepa Kumari
+### Deepa Kumari (github.com/deepabhard24-cell)
 
 Research
 
