@@ -23,9 +23,7 @@ export function ErrorBoundary() {
       <p>Something went wrong during rendering.</p>
       <pre style={{ whiteSpace: 'pre-wrap', backgroundColor: '#f0f0f0', padding: '10px', borderRadius: '4px', color: '#333' }}>
         <strong>Error:</strong> {errorMessage}
-        {'
-
-'}
+        {'\n\n'}
         {error instanceof Error && `Stack Trace:
 ${error.stack}`}
       </pre>

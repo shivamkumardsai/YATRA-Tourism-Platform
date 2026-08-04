@@ -1,0 +1,10 @@
+{
+  "buildCommand": "npm install --prefix design-system && npm --prefix design-system run build",
+  "outputDirectory": "design-system/dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
